@@ -1,32 +1,17 @@
 import streamlit as st
+import pandas as pd
 
-def calculate_bmi(weight, height):
-    bmi = weight / (height ** 2)
-    return round(bmi, 2)
+st.title("BMI Calculatot")
 
-def classify_bmi(bmi):
-    if bmi < 18.5:
-        return "Underweight"
-    elif 18.5 <= bmi < 24.9:
-        return "Normal weight"
-    elif 25 <= bmi < 29.9:
-        return "Overweight"
-    else:
-        return "Obese"
+height = st.slider("Enter your height (in cm): ", 100, 250, 175)
+weight = st.slider("Enter your weight (in kg): ", 40, 200, 70)
 
-def main():
-    st.title("💪 BMI Calculator")
+bmi = weight / ((height/100) ** 2)
 
-    st.write("Enter your weight and height to calculate your Body Mass Index.")
+st.write(f'Your BMI is {bmi:2f}')
 
-    weight = st.number_input("Weight (kg)", min_value=1.0, max_value=300.0, step=0.5)
-    height = st.number_input("Height (m)", min_value=0.5, max_value=2.5, step=0.01)
-
-    if st.button("Calculate BMI"):
-        bmi = calculate_bmi(weight, height)
-        classification = classify_bmi(bmi)
-        st.success(f"Your BMI is: {bmi}")
-        st.info(f"Category: {classification}")
-
-if __name__ == "__main__":
-    main()
+st.write("### BMI Categories ###")
+st.write("- Underwight: BMI less than 18.5")
+st.write("- Normal weightL BMI between 18.5 and 24.9")
+st.write("- Overweight: BMI between 25 and 29.9 ")
+st.write("- Obesity: BMI 30 or greater")
