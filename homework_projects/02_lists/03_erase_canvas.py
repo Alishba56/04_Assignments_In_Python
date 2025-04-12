@@ -42,8 +42,11 @@ class EraserCanvasApp:
                 if not (cx2 < x1 or cx1 > x2 or cy2 < y1 or cy1 > y2):
                     self.canvas.itemconfig(cell, fill='white')
 
-if __name__ == "__main__":
+def main():
     root = tk.Tk()
     root.title("Eraser Canvas")
     app = EraserCanvasApp(root)
     root.mainloop()
+
+if __name__ == "__main__":
+    main()

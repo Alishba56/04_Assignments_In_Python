@@ -1,4 +1,3 @@
-# Constants
 PROMPT = "What do you want? "
 JOKE = ("Here is a joke for you! Panaversity GPT - Sophia is heading out to the grocery store. "
         "A programmer tells her: get a liter of milk, and if they have eggs, get 12. "

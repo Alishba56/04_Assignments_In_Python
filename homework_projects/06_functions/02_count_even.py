@@ -19,4 +19,5 @@ def main():
     
     count_even(lst)
 
-main()
+if __name__ == "__main__":
+    main()

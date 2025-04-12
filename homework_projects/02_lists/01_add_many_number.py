@@ -3,7 +3,6 @@ def sum_of_numbers(numbers):
     for num in numbers:
         total += num
     return total
-
 def main():
     my_list = [ 10, 50,20, 30, 40]
     

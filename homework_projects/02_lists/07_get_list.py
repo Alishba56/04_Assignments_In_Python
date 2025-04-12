@@ -6,7 +6,6 @@ def main():
         if user_input == "":
             break
         values.append(user_input)
-
     print("Here's the list:", values)
 
 if __name__ == "__main__":

@@ -4,5 +4,10 @@ def even_odd_sequence():
             print(f"{num} even", end=" ")
         else:
             print(f"{num} odd", end=" ")
+    print()  # Add newline after the loop for clean output
 
-even_odd_sequence()
+def main():
+    even_odd_sequence()
+
+if __name__ == "__main__":
+    main()

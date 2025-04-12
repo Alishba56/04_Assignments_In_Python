@@ -10,4 +10,5 @@ def main():
     age = int(input("How old is this person?: "))
     print(is_adult(age))
 
-main()
+if __name__ == "__main__":
+    main()

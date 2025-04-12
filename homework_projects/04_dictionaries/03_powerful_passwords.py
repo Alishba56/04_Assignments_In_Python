@@ -16,10 +16,14 @@ def login(email, password_to_check):
             return True
     return False
 
-email = "user1@example.com"
-password = "password123"
-print(login(email, password))
+def main():
+    email = input("Enter your email: ")
+    password = input("Enter your password: ")
+    
+    if login(email, password):
+        print("Login successful!")
+    else:
+        print("Invalid email or password.")
 
-email = "user2@example.com"
-password = "wrongpassword"
-print(login(email, password))
+if __name__ == "__main__":
+    main()

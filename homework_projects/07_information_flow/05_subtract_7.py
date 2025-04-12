@@ -8,4 +8,5 @@ def main():
     
     print(f"Result after subtracting 7: {result}")
 
-main()
+if __name__ == "__main__":
+    main()

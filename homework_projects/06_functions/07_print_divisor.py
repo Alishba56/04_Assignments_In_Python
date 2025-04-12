@@ -10,4 +10,5 @@ def main():
     num = int(input("Enter a number: "))
     print_divisors(num)
 
-main()
+if __name__ == "__main__":
+    main()

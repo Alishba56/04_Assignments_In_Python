@@ -5,4 +5,5 @@ def main():
     name = input("What's your name? ")
     greet(name)
 
-main()
+if __name__ == "__main__":
+    main()

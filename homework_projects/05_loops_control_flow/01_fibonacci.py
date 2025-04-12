@@ -6,4 +6,5 @@ def fibonacci_sequence():
         print(a, end=" ")
         a, b = b, a + b
 
-fibonacci_sequence()
+if __name__ == "__main__":
+    fibonacci_sequence()

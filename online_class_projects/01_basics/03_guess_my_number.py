@@ -12,4 +12,9 @@ def guess_my_number():
             print(f"Congrats! The number was: {number_to_guess}")
             break
 
-guess_my_number()
+def main():
+    print("Welcome to the Number Guessing Game!")
+    guess_my_number()
+
+if __name__ == "__main__":
+    main()

@@ -19,4 +19,5 @@ def main():
     else:
         print("This fruit is not in stock.")
 
-main()
+if __name__ == "__main__":
+    main()

@@ -16,4 +16,5 @@ def main():
     chaotic_counting()
     print("I'm done.")
 
-main()
+if __name__ == "__main__":
+    main()

@@ -8,10 +8,11 @@ def main():
     while True:
         try:
             repeats = int(input("Enter a number of times to repeat your message: "))
-            break  
+            break 
         except ValueError:
             print("Please enter a valid number.")
 
     print_multiple(message, repeats)
 
-main()
+if __name__ == "__main__":
+    main()

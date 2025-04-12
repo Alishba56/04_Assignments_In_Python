@@ -23,4 +23,5 @@ def main():
 
     make_sentence(word, part_of_speech)
 
-main()
+if __name__ == "__main__":
+    main()

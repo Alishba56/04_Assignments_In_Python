@@ -7,7 +7,7 @@ def get_user_data():
 
 def main():
     user_data = get_user_data()
-    
     print("Received the following user data:", user_data)
 
-main()
+if __name__ == "__main__":
+    main()

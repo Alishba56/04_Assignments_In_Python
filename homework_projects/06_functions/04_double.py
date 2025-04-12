@@ -6,4 +6,5 @@ def main():
     result = double(num)
     print(f"Double that is {result}")
 
-main()
+if __name__ == "__main__":
+    main()
